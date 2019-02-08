@@ -20,7 +20,6 @@
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
     "angular-gridster2": "^7.1.0",
-    "bootstrap": "^4.2.1",
     "bootstrap-scss": "^4.2.1",
     "core-js": "^2.5.4",
     "plotly.js-dist": "^1.44.3",
