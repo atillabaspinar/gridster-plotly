@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Renderer2, ElementRef } from '@angular/core';
+import { Component, OnInit, Input, Renderer2, ElementRef, ViewChild } from '@angular/core';
 interface Props {
   text?: string;
   bgColor?: string;
@@ -7,39 +7,26 @@ interface Props {
 @Component({
   selector: 'app-dashboard-item',
   templateUrl: './dashboard-item.component.html',
-  styleUrls: ['./dashboard-item.component.sass']
+  styleUrls: ['./dashboard-item.component.scss']
 })
 export class DashboardItemComponent implements OnInit {
 
+  @ViewChild('canvas') canvas: HTMLElement;
   _props: Props;
-  color  = 'blue';
+  color  = 'aquamarine';
 
   @Input() set props(value: Props) {
-    console.log('props set to', value );
+    console.log('props set to', value);
     if (value.bgColor) {
       this.color = value.bgColor;
     }
     this._props = value;
-    // if (this._props) {
-    //   if (this.props.bgColor) {
-    //     this.color = this.props.bgColor;
-    //     console.log('color set to ', this.color);
-    //   }
-    // }
   }
   constructor(private renderer: Renderer2, private el: ElementRef) {
 
   }
 
   ngOnInit() {
-    if (this.color) {
-
-    this.renderer.setStyle(
-      this.el.nativeElement,
-      'color',
-      this.color
-    );
-    }
   }
 
 }
