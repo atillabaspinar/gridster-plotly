@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
 
+This project uses angular-gridster2 with plotly.js to display multiple charts on one page
+Page is fullscreen with no scrolling.
+
+Other features: 
+Bootstrap 4
+Scss
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
