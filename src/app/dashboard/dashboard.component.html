@@ -1,5 +1,7 @@
+<div class="btn btn-primary" (click)="draw()"></div>
 <gridster [options]="options">
   <gridster-item [item]="item" *ngFor="let item of dashboard">
-    <app-dashboard-item [props]="item.itemProps"></app-dashboard-item>
+    <!-- <div id="plot{{item.id}}"></div> -->
+  
   </gridster-item>
 </gridster>

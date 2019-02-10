@@ -1,9 +1,26 @@
 :host {
     position: relative;
     height: 100%; 
+    widows: 100%;
     background-color: aquamarine;
-    div {
+    .plot-canvas {
         height: 100%;
         position: relative;
     }
+}
+
+.plot-canvas {
+    height: 100%;
+    position: relative;
+    .plot-container {
+        height: 100%;
+    }
+}
+
+.btn {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    opacity: 0.5;
+    z-index: 1001;
 }
